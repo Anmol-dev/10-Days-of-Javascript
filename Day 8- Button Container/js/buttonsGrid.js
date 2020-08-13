@@ -5,6 +5,7 @@ let btn5 = document.getElementById("btn5");
 
 btn5.onclick = function() {
     nums.unshift(nums.pop());
+    console.log(nums);
     for(i=0; i<=7; i++) {
         document.getElementById("btn"+ ids[i]).innerHTML = nums[i];
     }
